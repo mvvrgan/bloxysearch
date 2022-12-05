@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "BloxySearch",
+    "description": "Search up your faveourite users and join them!",
+    "version": "1.0",
+    "action": {
+        "default_icon": "src/images/logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.roblox.com/games/*"],
+            "js": ["src/scripts/content.js"],
+            "css": ["src/content.css"]
+        }
+    ]
+  }
